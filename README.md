@@ -1,5 +1,9 @@
 # butterfly
 
+Personal developpement blog
+
+Lang.: French
+
 ## Project setup
 ```
 npm install
