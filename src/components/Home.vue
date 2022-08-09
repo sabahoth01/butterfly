@@ -9,13 +9,14 @@
   </div>
   <div class="nav d-flex flex-row flex-nowrap justify-content-center align-items-center container-fluid  sticky-top banner">
     <div class="toggler ms-5 ps-5">
+
       <button class="btn float-start ms-4 ps-4 bg-black fs-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
         <i class="bi bi-arrow-right-square-fill  fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
       </button>
+
       <!-- Slide menu -->
-      <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+      <div class="offcanvas offcanvas-start p-5 w-auto" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
         <div class="offcanvas-header">
-          <h6 class="offcanvas-title d-none d-sm-block text-black" id="offcanvas">Menu</h6>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body px-0">
@@ -85,8 +86,8 @@
     </div>
 
     <!-- Podcast -->
-    <div class="my-5 p-4 podcast d-flex flex-row  flex-nowrap align-items-center">
-      <div class="podcastIntro col-md-4 reveal col-7">
+    <div class="my-5 p-4 podcast d-flex flex-row flex-nowrap align-items-center">
+      <div class="podcastIntro col-md-4 reveal col-7 ">
         <p class="body-text text-break ">
           Les podcasts de Keren Mat sont des sujets pertinents et constructifs
           qui t’aideront dans ta vie de chaque jour !<br/>
@@ -170,10 +171,11 @@
       </div>
     </div>
   </div>
+  <Footer/>
 </template>
 
 <script>
-
+import Footer from '@/components/Footer'
 import pic1 from '@/assets/bac.png'
 import logo from '@/assets/log.png'
 import latest from '@/assets/latest-image.jpg'
@@ -187,6 +189,7 @@ import smile from '@/assets/smile.jpg'
 
 export default {
   name: 'Home-content',
+  components:{Footer},
   data(){
     return {
       cover: pic1,
@@ -209,11 +212,19 @@ export default {
 *{
   font-family: "Times New Roman","Lucida Bright", Avenir, Helvetica, Arial, sans-serif;
 }
+
+.offcanvas{
+  background-color: #536c17;
+}
+
 img{
   width: 100%;
   height: 100%;
 }
 
+.motto{
+  font-weight: bolder;
+}
 .banner{
   height:15vh;
   background-color: #fdcd65;
@@ -224,7 +235,12 @@ img{
   color: #1a2303;
 
 }
-
+.toggler{
+  flex: 30%;
+}
+.about{
+  flex: 30%;
+}
 .titles{
   font-family: "Arial Rounded MT Bold",monospace;
   font-weight: bold;
@@ -232,12 +248,6 @@ img{
 }
 .body-text{
   font-size: 23px;
-}
-.toggler{
-  flex: 30%;
-}
-.about{
-  flex: 30%;
 }
 .postIntro{
   flex: 60%;

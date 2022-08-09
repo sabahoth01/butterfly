@@ -1,17 +1,15 @@
 <template>
-  <NavBar/>
-  <Home/>
+ <Home/>
 </template>
 
 <script>
 
-import NavBar from "@/components/Navbar";
 import Home from "@/components/Home";
+
 
 export default {
   name: 'App',
   components: {
-    NavBar,
     Home
   }
 };
