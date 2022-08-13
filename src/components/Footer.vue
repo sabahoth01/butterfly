@@ -1,13 +1,13 @@
 <template>
 <footer>
     <div class="container d-flex flex-column flex-nowrap">
-        <div class=" d-flex flex-nowrap flex-row ">
-            <div class="blog-name col-4 col-md-3">
+        <div class="row d-flex flex-nowrap flex-row ">
+            <div class="blog-name visually-sm-hidden col-4 col-md-3">
               <p>
-                <img :src="logo" alt="logo">
+                <img :src="logo" alt="logo" width="100%" class="img img-fluid">
               </p>
             </div>
-            <div class="links col-4 col-md-6 mt-5 py-2">
+            <div class="links col-sm-6 col-4 col-md-6 mt-5 py-2">
               <p>Info</p>
               <p>
                 <router-link class="text-decoration-none "  to="/about">About</router-link><br/>
@@ -17,7 +17,7 @@
                 </a>
               </p>
             </div>
-            <div class="follow col-4 col-md-3 mt-5 p-2">
+            <div class="follow col-sm-6 col-4 col-md-3 mt-5 p-2">
               <p>
                 Suivez-nous:
               </p>
@@ -28,7 +28,7 @@
               </p>
             </div>
         </div>
-      <div class="d-flex flex-row flex-nowrap container m-4">
+      <div class="row d-flex flex-row flex-nowrap container m-4">
         <div class="address col-6 text-md-start">
           <i>Kyrenia, Chypre</i>
         </div>

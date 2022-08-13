@@ -2,27 +2,27 @@
 
   <div class="header container-fluid"
        :style="{'background-image':'url('+cover+')'}">
-    <div class=" header-text-overlay d-flex flex-column flex-nowrap justify-content-center align-items-center">
-      <div class="motto text-break"><h1>Grow and arise with Keren Mat!</h1></div>
-      <div class="blog mt-5"><router-link to="/blog" class="blog"><button>LE BLOG</button></router-link></div>
+    <div class="row header-text-overlay d-flex flex-column flex-nowrap justify-content-center align-items-center">
+      <div class="col-12 motto text-break"><h1>Grow and arise with Keren Mat!</h1></div>
+      <div class="blog mt-5 col-12"><router-link to="/blog" class="blog"><button>LE BLOG</button></router-link></div>
     </div>
   </div>
 
 
   <!--navbar -->
   <div class="nav d-flex flex-row flex-nowrap justify-content-center align-items-center container-fluid  sticky-top banner">
-    <div class="toggler ms-5 ps-5">
+    <div class="toggler col-2 ms-5 ps-5">
 
-      <button class="btn float-start ms-4 ps-4 bg-black fs-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+      <button class=" btn float-start ms-2 ps-4 bg-black fs-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
         <i class="bi bi-arrow-right-square-fill  fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
       </button>
 
       <!-- Slide menu -->
-      <div class="offcanvas offcanvas-start p-5 w-auto" data-bs-scroll="true" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+      <div class="row offcanvas offcanvas-start p-5 w-25" data-bs-scroll="true" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
         <div class="offcanvas-header">
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body px-0">
+        <div class="offcanvas-body  px-0 ">
           <div class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
             <router-link class="nav-link text-truncate" to="/">
               <span class="ms-1 d-none d-sm-inline">HOME</span>
@@ -65,7 +65,7 @@
     </div>
 
     <!--Latest post -->
-    <div class="my-5 p-4 latest d-flex flex-md-row flex-column flex-nowrap align-items-center">
+    <div class="my-5 p-4 row g-3 latest d-flex flex-md-row flex-column flex-nowrap align-items-center overflow-hidden ">
       <div class="postImg reveal fade-left col-md-5 col-12">
         <img :src="latest" alt="post-image">
       </div>
@@ -88,8 +88,8 @@
     </div>
 
     <!-- Podcast -->
-    <div class="my-5 p-2 podcast d-flex flex-row flex-nowrap align-items-center">
-      <div class="podcastIntro col-md-4 reveal col-7 ">
+    <div class="my-5 p-2 row g-3 podcast d-flex flex-md-row flex-column flex-nowrap align-items-center">
+      <div class="podcastIntro col-md-4 reveal col-12 ">
         <p class="body-text text-break pt-5 mt-5 text-podcast">
           Les podcasts de Keren Mat sont des sujets pertinents et constructifs
           qui t’aideront dans ta vie de chaque jour !<br/>
@@ -103,13 +103,13 @@
           </router-link>
         </p>
       </div>
-      <div class="podcastImg reveal fade-right col-md-7 offset-1 col-4">
+      <div class="podcastImg reveal fade-right col-md-7 offset-md-1 col-12">
         <img :src="podcast" alt="podcast-pic">
       </div>
     </div>
 
     <!-- quotes -->
-    <div class="quotes reveal fade-bottom my-5 p-4 d-flex flex-nowrap flex-md-row flex-column gy-3">
+    <div class="quotes row reveal fade-bottom my-5 p-4 d-flex flex-nowrap flex-md-row flex-column g-3">
       <div class="quotes-content  col-md-3 col-12 ">
         <img :src="doing" alt="citation-image" class="">
         <blockquote class="p-2 bg-black bg-opacity-50 top-0 position-absolute h-100 w-100">
@@ -140,7 +140,7 @@
     </div>
 
     <!-- other post -->
-    <div class="my-5 p-4 other-post d-flex flex-md-row flex-nowrap flex-column align-items-center">
+    <div class="my-5 row g-3 p-4 other-post d-flex flex-md-row flex-nowrap flex-column align-items-center">
       <div class="postImg reveal fade-left col-md-5  col-12">
         <img :src="passion" alt="post-image">
       </div>
@@ -163,7 +163,7 @@
   </div>
   <div class="footer container-fluid "
        :style="{'background-image':'url('+happy+')'}">
-    <div class="footer-text-overlay d-flex flex-column flex-nowrap h-100 w-100 justify-content-center align-items-center">
+    <div class="footer-text-overlay row d-flex flex-column flex-nowrap h-100 w-100 justify-content-center align-items-center">
       <div class="reveal motto text-break bg-black opacity-50 p-3">
           <h1>
           Être heureux, c’est un choix.<br/>C’est ton choix !<br/>
@@ -217,8 +217,9 @@ export default {
 }
 
 .offcanvas{
-  background-color: #536c17;
+  background-color: #1a2303;
 }
+
 
 img{
   width: 100%;
@@ -244,6 +245,7 @@ img{
 .about{
   flex: 30%;
 }
+
 .titles{
   font-family: "Arial Rounded MT Bold",monospace;
   font-weight: bold;

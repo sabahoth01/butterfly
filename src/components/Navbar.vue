@@ -1,17 +1,18 @@
 <template>
+  <!--navbar -->
   <div class="nav d-flex flex-row flex-nowrap justify-content-center align-items-center container-fluid  sticky-top banner">
-    <div class="toggler ms-5 ps-5">
+    <div class="toggler col-2 ms-5 ps-5">
 
-      <button class="btn float-start ms-4 ps-4 bg-black fs-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+      <button class=" btn float-start ms-2 ps-4 bg-black fs-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
         <i class="bi bi-arrow-right-square-fill  fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
       </button>
 
       <!-- Slide menu -->
-      <div class="offcanvas offcanvas-start p-5 w-auto" data-bs-scroll="true" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+      <div class="row offcanvas offcanvas-start p-5 w-25" data-bs-scroll="true" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
         <div class="offcanvas-header">
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close text-reset text-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body px-0">
+        <div class="offcanvas-body px-0 ">
           <div class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
             <router-link class="nav-link text-truncate" to="/">
               <span class="ms-1 d-none d-sm-inline">HOME</span>
@@ -51,7 +52,8 @@ export default {
 }
 
 .offcanvas{
-  background-color: #cfef92;
+  background-color: #fdcd65;
+
 }
 
 .banner{
@@ -70,4 +72,5 @@ export default {
 .about{
   flex: 30%;
 }
+
 </style>
