@@ -1,10 +1,8 @@
 <template>
-  <div class="about">
-    <h1>This section is not ready</h1>
-    <p>
-      <router-link to="home">Home</router-link>
-    </p>
-  </div>
+  Ouuups<br/>
+  <h1 class="my-5 p-5">Cette section n'est pas encore disponible...<br/></h1>
+  <router-link to="/">Retour à la page d'accueil</router-link>
+
 </template>
 
 <script>

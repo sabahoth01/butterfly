@@ -4,9 +4,12 @@
        :style="{'background-image':'url('+cover+')'}">
     <div class=" header-text-overlay d-flex flex-column flex-nowrap justify-content-center align-items-center">
       <div class="motto text-break"><h1>Grow and arise with Keren Mat!</h1></div>
-      <div class="blog mt-5"><router-link to="/blog" class="blog"><button>En savoir plus</button></router-link></div>
+      <div class="blog mt-5"><router-link to="/blog" class="blog"><button>LE BLOG</button></router-link></div>
     </div>
   </div>
+
+
+  <!--navbar -->
   <div class="nav d-flex flex-row flex-nowrap justify-content-center align-items-center container-fluid  sticky-top banner">
     <div class="toggler ms-5 ps-5">
 
@@ -15,26 +18,23 @@
       </button>
 
       <!-- Slide menu -->
-      <div class="offcanvas offcanvas-start p-5 w-auto" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+      <div class="offcanvas offcanvas-start p-5 w-auto" data-bs-scroll="true" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
         <div class="offcanvas-header">
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body px-0">
           <div class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
             <router-link class="nav-link text-truncate" to="/">
-              <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">HOME</span>
-            </router-link>
-            <router-link class="nav-link text-truncate" data-bs-toggle="collapse" to="/about">
-              <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">ABOUT</span>
+              <span class="ms-1 d-none d-sm-inline">HOME</span>
             </router-link>
             <router-link class="nav-link text-truncate" to="/blog">
-              <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">BLOG</span>
+              <span class="ms-1 d-none d-sm-inline">BLOG</span>
             </router-link>
             <router-link class="nav-link text-truncate" to="/contact">
-              <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">CONTACT</span>
+              <span class="ms-1 d-none d-sm-inline">CONTACT</span>
             </router-link>
             <router-link class="nav-link text-truncate" to="/podcast">
-              <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">PODCAST</span>
+              <span class="ms-1 d-none d-sm-inline">PODCAST</span>
             </router-link>
           </div>
         </div>
@@ -48,6 +48,8 @@
     </div>
   </div>
 
+
+  <!-- main menu -->
   <div class=" container-fluid d-flex p-2 flex-column ">
     <!-- intro -->
     <div class="reveal d-block mt-5 py-5 col-12 text-break text-center">
@@ -78,7 +80,7 @@
         <p class="p-3">
           <router-link  to="/confier">
             <button class="">
-              En savoir plus
+              Lire...
             </button>
           </router-link>
         </p>
@@ -86,9 +88,9 @@
     </div>
 
     <!-- Podcast -->
-    <div class="my-5 p-4 podcast d-flex flex-row flex-nowrap align-items-center">
+    <div class="my-5 p-2 podcast d-flex flex-row flex-nowrap align-items-center">
       <div class="podcastIntro col-md-4 reveal col-7 ">
-        <p class="body-text text-break ">
+        <p class="body-text text-break pt-5 mt-5 text-podcast">
           Les podcasts de Keren Mat sont des sujets pertinents et constructifs
           qui t’aideront dans ta vie de chaque jour !<br/>
           <i>Le bon Message au bon moment, peut tout changer !</i>
@@ -96,7 +98,7 @@
         <p class="p-3">
           <router-link  to="/podcast">
             <button class="">
-              En savoir plus
+              Ecouter...
             </button>
           </router-link>
         </p>
@@ -140,20 +142,19 @@
     <!-- other post -->
     <div class="my-5 p-4 other-post d-flex flex-md-row flex-nowrap flex-column align-items-center">
       <div class="postImg reveal fade-left col-md-5  col-12">
-        <img :src="postIcon" alt="post-image">
+        <img :src="passion" alt="post-image">
       </div>
       <div class="reveal postIntro col-md-6 offset-1 col-12 bg-light p-2">
         <hr class="tiret" />
-        <p class="titles">Sommes-nous en sécurité quand nous nous confions?</p>
+        <p class="titles">Soyons des passionnés !</p>
         <p class="body-text">
-          Je me suis confié, mais à présent, je me sens en insécurité…<br/>
-          Ai-je fait un mauvais choix ? Ai-je mal fait de sortir de ma coquille ?<br/>
-          Tels sont les types de questions que plusieurs personnes se posent...
+          Avez-vous déjà pensé à quel rôle vous voulez jouer autour de vous?<br/>
+          ou quel titre vous voulez obtenir dans la vie...?<br/>
         </p>
         <p class="p-3">
           <router-link  to="/confier">
             <button class="">
-              En savoir plus
+              Lire...
             </button>
           </router-link>
         </p>
@@ -186,10 +187,11 @@ import choice from '@/assets/choix.jpg'
 import doing from '@/assets/faire.jpg'
 import podcast from '@/assets/podcast.jpg'
 import smile from '@/assets/smile.jpg'
+import passion from '@/assets/passion.jpg'
 
 export default {
   name: 'Home-content',
-  components:{Footer},
+  components:{ Footer},
   data(){
     return {
       cover: pic1,
@@ -201,6 +203,7 @@ export default {
       choice: choice,
       doing: doing,
       happy: happy,
+      passion: passion,
       smile: smile
     }
   }
@@ -261,7 +264,9 @@ img{
  .podcastImg{
   flex: 55%;
 }
-
+.text-podcast{
+  padding-top: 3%;
+}
 .quotes-content {
   position: relative;
   top: 0;

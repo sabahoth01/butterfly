@@ -7,26 +7,23 @@
       </button>
 
       <!-- Slide menu -->
-      <div class="offcanvas offcanvas-start p-5 w-auto" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+      <div class="offcanvas offcanvas-start p-5 w-auto" data-bs-scroll="true" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
         <div class="offcanvas-header">
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body px-0">
           <div class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
             <router-link class="nav-link text-truncate" to="/">
-              <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">HOME</span>
-            </router-link>
-            <router-link class="nav-link text-truncate" data-bs-toggle="collapse" to="/about">
-              <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">ABOUT</span>
+              <span class="ms-1 d-none d-sm-inline">HOME</span>
             </router-link>
             <router-link class="nav-link text-truncate" to="/blog">
-              <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">BLOG</span>
+              <span class="ms-1 d-none d-sm-inline">BLOG</span>
             </router-link>
             <router-link class="nav-link text-truncate" to="/contact">
-              <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">CONTACT</span>
+              <span class="ms-1 d-none d-sm-inline">CONTACT</span>
             </router-link>
             <router-link class="nav-link text-truncate" to="/podcast">
-              <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">PODCAST</span>
+              <span class="ms-1 d-none d-sm-inline">PODCAST</span>
             </router-link>
           </div>
         </div>
@@ -73,5 +70,4 @@ export default {
 .about{
   flex: 30%;
 }
-
 </style>

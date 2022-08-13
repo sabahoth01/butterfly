@@ -1,23 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="blog logo" src="../assets/logoo.png">
-    <Home msg="Welcome to Your Vue.js App"/>
+  <div class="blog">
+    <Blog />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Home from '@/components/Home.vue'
+import Blog from '@/components/Blog.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'BlogView',
   components: {
-    Home
+    Blog
   }
 }
 </script>
 <style>
-.nav__home{
-  background-color: transparent;
-}
+
 </style>

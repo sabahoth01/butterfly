@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <img alt="blog logo" src="../assets/logoo.png">
-    <Home msg="Welcome to Your Vue.js App"/>
+    <Home />
   </div>
 </template>
 
@@ -17,7 +16,5 @@ export default {
 }
 </script>
 <style>
-.nav__home{
-  background-color: transparent;
-}
+
 </style>
