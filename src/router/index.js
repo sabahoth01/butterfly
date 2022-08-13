@@ -17,6 +17,7 @@ import Profiter from "@/views/Profiter";
 import Reparer from "@/views/Reparer";
 import Peur from "@/views/Peur"
 import Surmonter from "@/views/Surmonter"
+import AboutView from "@/views/AboutView";
 
 
 
@@ -25,6 +26,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: AboutView
   },
   {
     path: '/podcast',
