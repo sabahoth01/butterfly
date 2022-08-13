@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 window.$ = window.jQuery = require('jquery');
 library.add(faIdCard, faDiamond, faYoutube, faFacebookF, faInstagram)
 
-
+// function for reveal texts when scrolling
 function reveal() {
     let reveals = document.querySelectorAll(".reveal");
     for (let i = 0; i < reveals.length; i++) {

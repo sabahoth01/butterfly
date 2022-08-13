@@ -13,9 +13,7 @@
         <h5 class="card-title">Se confier... ?</h5>
         <p class="card-text">Je me suis confié, mais à présent, je me sens en insécurité…
           Ai-je fait un mauvais...</p>
-        <button class=" btn bg-color text-decoration-none">
-          <router-link to="/aller-de-l-avant" target="_blank">Lire</router-link>
-        </button>
+        <router-link to="/aller-de-l-avant" target="_blank">Lire</router-link>
       </div>
     </div>
 
@@ -114,7 +112,7 @@
       <div class="card-body">
         <h5 class="card-title">Ce dont tu as besoin</h5>
         <p class="card-text">Il faut aller de l'avant en prenant de bonnes résolutions,en écoutant les bons conseils...</p>
-        <router-link to="/besoins" target="_blank">Lire</router-link>
+        <router-link to="/besoin" target="_blank">Lire</router-link>
       </div>
     </div>
 
