@@ -12,4 +12,4 @@ Personal developpement blog
 ## New design
 
 [butterfly](https://butterfly-blog.herokuapp.com/)
-## Project setup
+
