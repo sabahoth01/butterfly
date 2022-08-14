@@ -60,4 +60,31 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+@media screen and (max-device-width: 700px) {
+  .body-text{
+    font-size: 18px;
+  }
+
+  .name{
+    flex: 40%;
+    font-size: 20px;
+    color: #1a2303;
+
+  }
+  .titles{
+    font-family: "Arial Rounded MT Bold",monospace;
+    font-weight: bold;
+    font-size: 29px;
+  }
+
+
+}
+
+@media  screen and (min-device-width: 900px) {
+  .quotes-content{
+    flex: 22%;
+    margin: 0.8%;
+  }
+}
 </style>

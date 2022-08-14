@@ -8,10 +8,11 @@ import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faIdCard, faDiamond} from '@fortawesome/free-solid-svg-icons'
 import {faFacebookF, faYoutube, faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {faElementor} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 window.$ = window.jQuery = require('jquery');
-library.add(faIdCard, faDiamond, faYoutube, faFacebookF, faInstagram)
+library.add(faIdCard, faDiamond, faYoutube, faFacebookF, faInstagram, faElementor)
 
 // function for reveal texts when scrolling
 function reveal() {

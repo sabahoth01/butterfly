@@ -11,30 +11,30 @@
 
   <!--navbar -->
   <div class="nav d-flex flex-row flex-nowrap justify-content-center align-items-center container-fluid  sticky-top banner">
-    <div class="toggler col-2 ms-5 ps-5">
+    <div class="toggler col-2 ms-md-5 ms-2 ps-2 ps-md-5">
 
-      <button class=" btn float-start ms-2 ps-4 bg-black fs-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
-        <i class="bi bi-arrow-right-square-fill  fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+      <button class=" elementor-btn btn float-start ms-2 ps-2 fs-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+        <i class=" fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><font-awesome-icon icon="fa-brands fa-elementor" /></i>
       </button>
 
       <!-- Slide menu -->
-      <div class="row offcanvas offcanvas-start p-5 w-25" data-bs-scroll="true" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+      <div class="row offcanvas offcanvas-start p-md-5  w-auto" data-bs-scroll="true" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
         <div class="offcanvas-header">
           <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body  px-0 ">
           <div class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
-            <router-link class="nav-link text-truncate" to="/">
-              <span class="ms-1 d-none d-sm-inline">HOME</span>
+            <router-link class="nav-link " to="/">
+              <span class="ms-1 ">HOME</span>
             </router-link>
-            <router-link class="nav-link text-truncate" to="/blog">
-              <span class="ms-1 d-none d-sm-inline">BLOG</span>
+            <router-link class="nav-link " to="/blog">
+              <span class="ms-1 ">BLOG</span>
             </router-link>
-            <router-link class="nav-link text-truncate" to="/contact">
-              <span class="ms-1 d-none d-sm-inline">CONTACT</span>
+            <router-link class="nav-link " to="/contact">
+              <span class="ms-1 ">CONTACT</span>
             </router-link>
-            <router-link class="nav-link text-truncate" to="/podcast">
-              <span class="ms-1 d-none d-sm-inline">PODCAST</span>
+            <router-link class="nav-link " to="/podcast">
+              <span class="ms-1 ">PODCAST</span>
             </router-link>
           </div>
         </div>
@@ -69,7 +69,7 @@
       <div class="postImg reveal fade-left col-md-5 col-12">
         <img :src="latest" alt="post-image">
       </div>
-      <div class=" reveal postIntro col-md-6 offset-1 col-12 bg-light p-2">
+      <div class=" reveal postIntro col-md-6 offset-md-1 col-12 bg-light p-2">
         <hr class="tiret" />
         <p class="titles">Sommes-nous en sécurité quand nous nous confions?</p>
         <p class="body-text">
@@ -89,7 +89,7 @@
 
     <!-- Podcast -->
     <div class="my-5 p-2 row g-3 podcast d-flex flex-md-row flex-column flex-nowrap align-items-center">
-      <div class="podcastIntro col-md-4 reveal col-12 ">
+      <div class="podcastIntro col-md-5 col-12 ">
         <p class="body-text text-break pt-5 mt-5 text-podcast">
           Les podcasts de Keren Mat sont des sujets pertinents et constructifs
           qui t’aideront dans ta vie de chaque jour !<br/>
@@ -103,13 +103,13 @@
           </router-link>
         </p>
       </div>
-      <div class="podcastImg reveal fade-right col-md-7 offset-md-1 col-12">
+      <div class="podcastImg col-md-6 offset-md-1 col-12">
         <img :src="podcast" alt="podcast-pic">
       </div>
     </div>
 
     <!-- quotes -->
-    <div class="quotes row reveal fade-bottom my-5 p-4 d-flex flex-nowrap flex-md-row flex-column g-3">
+    <div class="quotes row reveal my-5 p-4 d-flex flex-nowrap flex-md-row flex-column g-2">
       <div class="quotes-content  col-md-3 col-12 ">
         <img :src="doing" alt="citation-image" class="">
         <blockquote class="p-2 bg-black bg-opacity-50 top-0 position-absolute h-100 w-100">
@@ -141,10 +141,10 @@
 
     <!-- other post -->
     <div class="my-5 row g-3 p-4 other-post d-flex flex-md-row flex-nowrap flex-column align-items-center">
-      <div class="postImg reveal fade-left col-md-5  col-12">
+      <div class="postImg col-md-5  col-12">
         <img :src="passion" alt="post-image">
       </div>
-      <div class="reveal postIntro col-md-6 offset-1 col-12 bg-light p-2">
+      <div class=" postIntro col-md-6 offset-md-1 col-12 bg-light p-2">
         <hr class="tiret" />
         <p class="titles">Soyons des passionnés !</p>
         <p class="body-text">
@@ -254,6 +254,7 @@ img{
 .body-text{
   font-size: 23px;
 }
+
 .postIntro{
   flex: 60%;
 }
@@ -278,16 +279,10 @@ img{
 
 }
 
-@media  screen and (min-device-width: 900px) {
-  .quotes-content{
-    flex: 22%;
-    margin: 0.8%;
-  }
-}
-
 .quote-text {
   top: 35%;
   text-align: center;
+  padding: 0.5%;
 }
 
 .tiret{
@@ -344,6 +339,9 @@ button:hover {
   color: #070707;
 }
 
+.elementor-btn{
+  background-color: transparent;
+}
 .reveal{
   position: relative;
   transform: translateY(150px);
@@ -394,6 +392,35 @@ button:hover {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-device-width: 700px) {
+  .body-text{
+    font-size: 16px;
+  }
+
+  .name{
+    flex: 40%;
+    font-size: 20px;
+    color: #1a2303;
+
+  }
+  .titles{
+    font-family: "Arial Rounded MT Bold",monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .quote-text{
+    font-size: 13px;
+  }
+
+}
+
+@media  screen and (min-device-width: 900px) {
+  .quotes-content{
+    flex: 22%;
+    margin: 0.8%;
   }
 }
 

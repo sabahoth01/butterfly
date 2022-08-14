@@ -15,8 +15,8 @@
             </li>
           </ul>
         </div>
-        <div class="row mt-3">
-          <figure>
+        <div class="row mt-3 ">
+          <figure class="col-12">
             <img :src="chypre" alt="chypre">
             <figcaption><p>Kyrenia, Chypre</p></figcaption>
           </figure>

@@ -1,6 +1,6 @@
 <template>
 <footer>
-    <div class="container d-flex flex-column flex-nowrap">
+    <div class="container fs-sm-5 d-flex flex-column flex-nowrap">
         <div class="row d-flex flex-nowrap flex-row ">
             <div class="blog-name visually-sm-hidden col-4 col-md-3">
               <p>
@@ -136,5 +136,18 @@ footer{
 
 .links{
   text-decoration: none;
+}
+
+@media screen and (max-device-width: 700px) {
+  .fa {
+    padding: 6px;
+    font-size: 6px;
+    width: 6px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 1px;
+    border-radius: 50%;
+  }
+
 }
 </style>
