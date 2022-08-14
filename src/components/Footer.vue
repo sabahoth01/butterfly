@@ -4,7 +4,7 @@
         <div class="row d-flex flex-nowrap flex-row ">
             <div class="blog-name visually-sm-hidden col-4 col-md-3">
               <p>
-                <img :src="logo" alt="logo" width="100%" class="img img-fluid">
+                <img :src="logo" alt="logo" >
               </p>
             </div>
             <div class="links col-sm-6 col-4 col-md-6 mt-5 py-2">
