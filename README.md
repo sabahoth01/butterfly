@@ -3,6 +3,7 @@
 Personal developpement blog
 
 Lang.: French
+Techno: VueJs 3 + Bootstrap 5
 
 ## Old webview
 
