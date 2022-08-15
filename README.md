@@ -1,6 +1,6 @@
 # butterfly
 
-Personal developpement blog
+Personal development blog
 
 - Lang.: French
 - Techno: VueJs 3 + Bootstrap 5
