@@ -109,10 +109,10 @@
     </div>
 
     <!-- quotes -->
-    <div class="quotes row reveal my-5 p-4 d-flex flex-nowrap flex-md-row flex-column g-2">
+    <div class="quotes row reveal my-md-5 m-1 p-md-4 p-1 d-flex flex-nowrap flex-md-row flex-column g-2">
       <div class="quotes-content  col-md-3 col-12 ">
         <img :src="doing" alt="citation-image" class="">
-        <blockquote class="p-2 bg-black bg-opacity-50 top-0 position-absolute h-100 w-100">
+        <blockquote class="p-md-2 p-1 bg-black bg-opacity-50 top-0 position-absolute h-100 w-100">
           <p class="body-text quote-text position-relative">
             La meilleure manière de commencer est d’arrêter de discuter et de commencer à faire.<br/>
             &mdash; <cite>WALT DISNEY</cite>
@@ -121,7 +121,7 @@
       </div>
       <div class="quotes-content col-md-3 col-12">
         <img :src="choice" alt="citation-image">
-        <blockquote class=" p-2 bg-black bg-opacity-50  top-0 position-absolute h-100 w-100 ">
+        <blockquote class=" p-md-2 p-1 bg-black bg-opacity-50  top-0 position-absolute h-100 w-100 ">
           <p class="body-text quote-text position-relative">
             Ce sont nos choix, Harry, qui montrent ce que nous sommes vraiment, bien plus que nos capacités.<br/>
             &mdash; <cite>J.K. ROWLING</cite>
@@ -130,7 +130,7 @@
       </div>
       <div class="quotes-content col-md-3 col-12">
         <img :src="smile" alt="citation-image">
-        <blockquote class=" p-2 bg-black bg-opacity-50 top-0 position-absolute h-100 w-100">
+        <blockquote class=" p-md-2 p-1 bg-black bg-opacity-50 top-0 position-absolute h-100 w-100">
           <p class="body-text quote-text position-relative">
             Ne pleurez pas parce que c’est fini, souriez parce que c’est arrivé.<br/>
             &mdash; <cite>Dr. SEUSS</cite>
@@ -164,7 +164,7 @@
   <div class="footer container-fluid "
        :style="{'background-image':'url('+happy+')'}">
     <div class="footer-text-overlay row d-flex flex-column flex-nowrap h-100 w-100 justify-content-center align-items-center">
-      <div class="reveal motto text-break bg-black opacity-50 p-3">
+      <div class="reveal motto text-break bg-black opacity-50 p-md-3 p-1">
           <h1>
           Être heureux, c’est un choix.<br/>C’est ton choix !<br/>
           &mdash; <cite>KEREN MAT</cite>
