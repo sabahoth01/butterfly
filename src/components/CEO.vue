@@ -1,11 +1,11 @@
 <template>
   <NavBar/>
   <div class="container ">
-    <div class="row g-3 m-5 d-flex flex-column flex-nowrap justify-content-center align-items-center">
-      <div class="avatar p-5 ">
+    <div class="row g-md-3 g-2 m-md-5 m-1 d-flex flex-column flex-nowrap justify-content-center align-items-center">
+      <div class="avatar p-md-5 p-1">
         <img :src="photo" alt="image-ceo" class="w-100">
       </div>
-      <div class="about-ceo text-break p-5 text-start font-monospace fs-4">
+      <div class="about-ceo text-break p-md-5 p-1 fs-5 text-start font-monospace fs-md-4">
         <p>
           « Le changement est un processus à durée déterminée par la volonté qui accompagne
           chacune de nos intentions et chacun de nos choix » Tel un leitmotiv, cette mentalité

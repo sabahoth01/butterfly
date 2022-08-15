@@ -1,14 +1,14 @@
 <template>
   <NavBar/>
   <div class="container-fluid">
-    <h1 class="my-5 p-5 text-center">Aller de l'avant en faisant des bons choix</h1>
+    <h1 class="my-md-5 my-1 p-md-5 p-1 text-center">Aller de l'avant en faisant des bons choix</h1>
     <div class="fontAwesome my-5 align-items-center"></div>
     <div class="container ">
-      <div class="row g-3 m-5 d-flex flex-column flex-nowrap justify-content-center align-items-center">
-        <div class="avatar p-5 ">
+      <div class="row g-md-3 g-2 m-md-5 m-1 d-flex flex-column flex-nowrap justify-content-center align-items-center">
+        <div class="avatar p-md-5 p-1 ">
           <img :src="image" alt="image-ceo" class="w-100" />
         </div>
-        <div class="about-ceo text-break p-5 text-start font-monospace fs-4">
+        <div class="about-ceo text-break p-md-5 p-1 text-start font-monospace fs-md-4 fs-5">
           <p>
             ’Aller de l’avant’, c’est un choix que nous faisons lorsque nous ressentons le désir d’avancer
             et d’arrêter de stagner.

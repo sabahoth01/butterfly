@@ -1,12 +1,12 @@
 <template>
   <NavBar/>
   <div class="container-fluid">
-    <h1 class="my-5 p-5">
+    <h1 class="my-md-5 my-1 p-md-5 p-1">
       A propos
     </h1>
   </div>
   <div class="container ">
-    <div class="d-block align-items-center mx-5 text-start p-3 font-monospace fs-4">
+    <div class="d-block align-items-center mx-md-5 mx-1 text-start p-md-3 p-1 font-monospace fs-md-4 fs-5">
       <span class="ps-5 fw-bold text-primary">Grow and arise</span> est un Univers mis en place afin de communiquer au monde que peu importe
       ce par quoi nous passons, nous sommes capables de les transformer à notre avantage.
       <p class="mt-4">

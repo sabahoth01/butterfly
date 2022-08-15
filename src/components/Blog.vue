@@ -13,7 +13,7 @@
         <h5 class="card-title">Se confier... ?</h5>
         <p class="card-text">Je me suis confié, mais à présent, je me sens en insécurité…
           Ai-je fait un mauvais...</p>
-        <router-link to="/aller-de-l-avant" target="_blank">Lire</router-link>
+        <router-link to="/confier" target="_blank">Lire</router-link>
       </div>
     </div>
 

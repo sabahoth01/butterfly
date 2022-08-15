@@ -1,20 +1,20 @@
 <template>
   <NavBar/>
   <div class="container-fluid">
-    <h1 class="my-5 p-5 text-center">La foi, une puissance que tu dois posséder</h1>
+    <h1 class="my-md-5 my-1 p-1 p-md-5 text-center">La foi, une puissance que tu dois posséder</h1>
     <div class="fontAwesome my-5 align-items-center"></div>
     <div class="container ">
-      <div class="row g-3 m-5 d-flex flex-column flex-nowrap justify-content-center align-items-center">
-        <div class="avatar p-5 ">
+      <div class="row g-md-3 g-2 m-md-5 m-1 d-flex flex-column flex-nowrap justify-content-center align-items-center">
+        <div class="avatar p-md-5 p-1 ">
           <img :src="foi" alt="image-ceo" class="w-100">
-          <!-- picture here<img :src="image-name" alt="image-cover" class="w-100"/>-->
+
         </div>
-        <div class="about-ceo text-break p-5 text-start font-monospace fs-4">
+        <div class="about-ceo text-break p-md-5 p-1 text-start font-monospace fs-md-4 fs-5">
           <p>
             Un jour, quelqu’un m’a enseigné la différence entre « croire » et « savoir »
             C’était pendant une époque de ma vie où je vivais avec beaucoup de peurs et de doutes.
             Il m’avait dit ce jour là que plein de gens vivent avec des connaissances auxquelles ils
-            ne croient pas vraiment. Ils pensent y croire parcequ’ ils savent, mais tu verras qu’il n’en
+            ne croient pas vraiment. Ils pensent y croire parce qu’ ils savent, mais tu verras qu’il n’en
             faut pas beaucoup pour qu’ils soient troublés.
           </p>
           <p>

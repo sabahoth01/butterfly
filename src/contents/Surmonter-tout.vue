@@ -1,15 +1,15 @@
 <template>
   <NavBar/>
   <div class="container-fluid">
-    <h1 class="my-5 p-5 text-center">« Comment je surmonte les déceptions quotidiennes »</h1>
-    <div class="fontAwesome my-5 align-items-center"></div>
+    <h1 class="my-md-5 my-1 p-md-5 p-1 text-center">« Comment je surmonte les déceptions quotidiennes »</h1>
+    <div class="fontAwesome my-md-5 my-1 align-items-center"></div>
     <div class="container ">
-      <div class="row g-3 m-5 d-flex flex-column flex-nowrap justify-content-center align-items-center">
-        <div class="avatar p-5 ">
+      <div class="row g-md-3 g-2 m-md-5 m-1 d-flex flex-column flex-nowrap justify-content-center align-items-center">
+        <div class="avatar p-md-5 p-1 ">
           <img :src="surmonter" alt="image-ceo" class="w-100">
-          <!-- picture here<img :src="image-name" alt="image-cover" class="w-100"/>-->
+
         </div>
-        <div class="about-ceo text-break p-5 text-start font-monospace fs-4">
+        <div class="about-ceo text-break p-md-5 p-1 text-start font-monospace fs-md-4 fs-5">
           <p>
             il y’a des jours où, tu dois te lever avec cette pensée : « à qui vais-je faire du bien aujourd’hui ? ».
             La vie ne nous offre pas toujours des cadeaux; Et à chaque réveil, correspond un nouveau défi qu’il faut à tout prix relever.

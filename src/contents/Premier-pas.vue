@@ -1,15 +1,15 @@
 <template>
   <NavBar/>
   <div class="container-fluid">
-    <h1 class="my-5 p-5 text-center">Le premier pas</h1>
-    <div class="fontAwesome my-5 align-items-center"></div>
+    <h1 class="my-md-5 my-1 p-md-5 p-1 text-center">Le premier pas</h1>
+    <div class="fontAwesome my-md-5 my-1 align-items-center"></div>
     <div class="container ">
-      <div class="row g-3 m-5 d-flex flex-column flex-nowrap justify-content-center align-items-center">
-        <div class="avatar p-5 ">
+      <div class="row g-md-3 g-2 m-md-5 m-1 d-flex flex-column flex-nowrap justify-content-center align-items-center">
+        <div class="avatar p-md-5 p-1 ">
           <img :src="premier" alt="image-ceo" class="w-100">
-          <!-- picture here<img :src="image-name" alt="image-cover" class="w-100"/>-->
+
         </div>
-        <div class="about-ceo text-break p-5 text-start font-monospace fs-4">
+        <div class="about-ceo text-break p-md-5 p-1 text-start font-monospace fs-md-4 fs-5">
           <p>
             Faire le premier pas a toujours été difficile, mais une fois qu’on se lance,
             tout roule et on prend le rythme. N’ aie pas peur de te lancer par crainte d’échouer,

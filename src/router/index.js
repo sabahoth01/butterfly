@@ -18,6 +18,7 @@ import Reparer from "@/views/Reparer";
 import Peur from "@/views/Peur"
 import Surmonter from "@/views/Surmonter"
 import AboutView from "@/views/AboutView";
+import Confier from "@/views/Confier";
 
 
 
@@ -128,6 +129,12 @@ const routes = [
     path: '/surmonter',
     name: 'surmonter',
     component: Surmonter
+  }
+  ,
+  {
+    path: '/confier',
+    name: 'confier',
+    component: Confier
   }
 ]
 

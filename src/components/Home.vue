@@ -152,7 +152,7 @@
           ou quel titre vous voulez obtenir dans la vie...?<br/>
         </p>
         <p class="p-3">
-          <router-link  to="/confier">
+          <router-link  to="/passion">
             <button class="">
               Lire...
             </button>
