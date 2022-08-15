@@ -414,6 +414,7 @@ button:hover {
   .quote-text{
     font-size: 13px;
     padding: 0.2%;
+    overflow: hidden;
   }
 
 }
