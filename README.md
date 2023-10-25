@@ -11,5 +11,5 @@ Personal development blog
 
 ## New design
 
-[butterfly](https://butterfly-blog.herokuapp.com/)
+[butterfly](https://bright-froyo-d18817.netlify.app/)
 
